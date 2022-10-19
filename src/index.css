@@ -1,8 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=League+Spartan&display=swap");
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-antonio: "Antonio", sans-serif;
+  --ff-spartan: "League Spartan", sans-serif;
+
+  /* Color pallete */
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(240, 67%, 8%);
+  --very-dark-grey: hsl(240, 17%, 26%);
+  --turquoise: hsl(194, 48%, 49%);
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(33, 82%, 61%);
+  --purple: hsl(263, 67%, 51%);
+  --light-red: hsl(10, 63%, 51%);
+  --red: hsl(2, 68%, 53%);
+  --brown: hsl(17, 73%, 46%);
+  --green: hsl(169, 73%, 44%);
+  --blue: hsl(222, 87%, 56%);
+}
+
 body {
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  background-image: url(./Assets/background-stars.svg);
+  background-color: var(--very-dark-blue);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+/* Lists */
+li {
+  list-style: none;
+}
+/* Images */
+img {
+  width: 100%;
+}
+h1 {
+  font-family: var(--ff-antonio);
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 10.4rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+h2 {
+  font-family: var(--ff-antonio);
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+h3 {
+  font-family: var(--ff-spartan);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.57143px;
+  color: var(--white);
+}
+h4 {
+  font-family: var(--ff-spartan);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
 }
