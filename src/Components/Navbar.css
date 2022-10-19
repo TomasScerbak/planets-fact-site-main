@@ -1,0 +1,95 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.6rem 2.4rem 1.7rem;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.5);
+}
+
+.hamburger-icon {
+  width: 2.4rem;
+  height: 1.7rem;
+  align-self: center;
+  justify-self: flex-end;
+  cursor: pointer;
+}
+
+.planet-list {
+  display: none;
+}
+
+/* Utility class */
+.visible {
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2.4rem;
+  border-top: 1px solid hsla(0, 0%, 59%, 0.5);
+  cursor: pointer;
+}
+
+.nav-list:hover {
+  background-color: var(--very-dark-grey);
+}
+
+.nav-list:nth-child(1) {
+  padding-top: 4.4rem;
+  border: none;
+}
+
+.orb {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 2.5rem;
+}
+
+.Mercury {
+  background-color: #def4fc;
+}
+
+.Venus {
+  background-color: #f7cc7f;
+}
+
+.Earth {
+  background-color: #545bfe;
+}
+
+.Mars {
+  background-color: #ff6a45;
+}
+
+.Jupiter {
+  background-color: #ecad7a;
+}
+
+.Saturn {
+  background-color: #fccb6b;
+}
+
+.Uranus {
+  background-color: #65f0d5;
+}
+
+.Neptune {
+  background-color: #497efa;
+}
+
+.chevron {
+  width: 6px;
+  height: 9px;
+  margin-left: auto;
+}

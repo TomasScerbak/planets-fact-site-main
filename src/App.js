@@ -1,10 +1,24 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./Components/Navbar";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>TEST</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}></Route>
+        <Route path="mercury" element={<h1>Mercury</h1>}></Route>
+        <Route path="venus" element={<h1>venus</h1>}></Route>
+        <Route path="earth" element={<h1>earth</h1>}></Route>
+        <Route path="mars" element={<h1>mars</h1>}></Route>
+        <Route path="jupiter" element={<h1>jupiter</h1>}></Route>
+        <Route path="saturn" element={<h1>saturn</h1>}></Route>
+        <Route path="uranus" element={<h1>uranus</h1>}></Route>
+        <Route path="neptune" element={<h1>neptune</h1>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
