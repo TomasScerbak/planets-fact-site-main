@@ -21,20 +21,41 @@
   cursor: pointer;
 }
 
+.hamburger--active {
+  opacity: 50%;
+}
+
 .planet-list {
   display: none;
+  margin: 0 2.4rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 25%;
+  }
+  50% {
+    opacity: 50%;
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+    opacity: 100%;
+  }
 }
 
 /* Utility class */
 .visible {
   display: block;
+  animation: fadeIn linear 0.5s;
 }
 
 .nav-list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 2.4rem;
+  padding: 2rem 2.4rem 2rem 0;
   border-top: 1px solid hsla(0, 0%, 59%, 0.5);
   cursor: pointer;
 }

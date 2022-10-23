@@ -23,7 +23,9 @@ const Navbar = () => {
             <h1>The Planets</h1>
             <img
               onClick={isVisibleHandler}
-              className="hamburger-icon"
+              className={`${"hamburger-icon"} ${
+                visible ? "hamburger--active" : ""
+              }`}
               src={HamburgerIcon}
               alt="menu icon"
             />
