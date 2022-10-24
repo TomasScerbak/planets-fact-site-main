@@ -19,7 +19,7 @@ const Navbar = () => {
     <section>
       <header>
         <nav className="navbar">
-          <div className="nav-wrapper">
+          <div className="title-wrapper">
             <h1>The Planets</h1>
             <img
               onClick={isVisibleHandler}
