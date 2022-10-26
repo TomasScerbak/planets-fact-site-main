@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import HamburgerIcon from "../Assets/icon-hamburger.svg";
 import ChevronImage from "../Assets/icon-chevron.svg";
@@ -34,11 +35,13 @@ const Navbar = () => {
             {PlanetData.map((planet) => {
               return (
                 <li className="nav-list" key={planet.name}>
-                  <div
-                    className={`${planetName ? planet.name : ""} ${"orb"}`}
-                  ></div>
-                  <h4>{planet.name}</h4>
-                  <img className="chevron" src={ChevronImage} alt="#" />
+                  <Link to={`/${planet.name}`} key={planet.name}>
+                    <div
+                      className={`${planetName ? planet.name : ""} ${"orb"}`}
+                    ></div>
+                    <h4>{planet.name}</h4>
+                    <img className="chevron" src={ChevronImage} alt="#" />
+                  </Link>
                 </li>
               );
             })}

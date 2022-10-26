@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./Components/Navbar";
+import Mercury from "./Pages/Mercury";
 
 import "./App.css";
 
@@ -8,8 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}></Route>
-        <Route path="mercury" element={<h1>Mercury</h1>}></Route>
+        <Route path="/" element={<Mercury />}></Route>
         <Route path="venus" element={<h1>venus</h1>}></Route>
         <Route path="earth" element={<h1>earth</h1>}></Route>
         <Route path="mars" element={<h1>mars</h1>}></Route>
