@@ -135,22 +135,24 @@ const Mercury = () => {
                 </div>
               </>
             )}
-            {/* <div>
-              <div>
-                <h2>Rotation time:</h2>
-                <div>{`${PlanetData[0].rotation}`}</div>
+            <div className="planet-data-wrapper">
+              <div className="planet-data">
+                <h2 className="text">Rotation time:</h2>
+                <div className="data">{`${PlanetData[0].rotation}`}</div>
               </div>
-              <div>
-                <h2>Revolution time:</h2>
-                {PlanetData[0].revolution}
+              <div className="planet-data">
+                <h2 className="text">Revolution time:</h2>
+                <div className="data">{PlanetData[0].revolution}</div>
               </div>
-              <div>
-                <h2>Radius:</h2>
-                {PlanetData[0].radius}
+              <div className="planet-data">
+                <h2 className="text">Radius:</h2>
+                <div className="data">{PlanetData[0].radius}</div>
               </div>
-              <h2>Average temp.</h2>
-              <div>{PlanetData[0].temperature}</div>
-            </div> */}
+              <div className="planet-data">
+                <h2 className="text">Average temp.</h2>
+                <div className="data">{PlanetData[0].temperature}</div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
