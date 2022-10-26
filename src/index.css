@@ -165,6 +165,7 @@ p {
     border: 1px solid hsla(0, 0%, 59%, 0.5);
     color: var(--white);
     margin-bottom: 1.6rem;
+    content: "01 Overview";
   }
 
   .btn::after {
@@ -173,22 +174,23 @@ p {
 
   .btn:hover {
     background-color: var(--turquoise);
+    transition: 0.5s all;
   }
 }
 
 /* Mercury */
-.planet-image {
-  text-align: center;
-}
-
 .planet-info {
   text-align: center;
   margin: 0 2.4rem 2.8rem;
 }
 
+.planet-image {
+  text-align: center;
+}
+
 .mercury-images {
   position: relative;
-  max-width: 375px;
+  max-width: fit-content;
   margin: auto;
 }
 
@@ -200,7 +202,7 @@ p {
   margin: 9.5rem 13.2rem 9.8rem;
 }
 
-.mercury-surface-adhoc {
+.mercury-adhoc {
   width: 7rem;
   height: 7rem;
   position: absolute;
@@ -248,6 +250,23 @@ p {
     align-items: center;
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .mercury {
+    width: 18.4rem;
+    height: 18.4rem;
+  }
+
+  .mercury-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 39.5%;
+  }
+
+  .mercury-images {
+    max-width: fit-content;
   }
 
   .planet-info {

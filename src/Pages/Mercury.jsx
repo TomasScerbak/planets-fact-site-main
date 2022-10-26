@@ -111,13 +111,9 @@ const Mercury = () => {
               <>
                 <div className="planet-image">
                   <div className="mercury-images">
+                    <img className="mercury" src={Planet} alt="planet" />
                     <img
-                      className="mercury-surface"
-                      src={Planet}
-                      alt="planet"
-                    />
-                    <img
-                      className="mercury-surface-adhoc"
+                      className="mercury-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />
