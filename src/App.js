@@ -15,6 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Mercury />}></Route>
         <Route path="Mercury" element={<Mercury />}></Route>
         <Route path="Venus" element={<Venus />}></Route>
         <Route path="Earth" element={<Earth />}></Route>

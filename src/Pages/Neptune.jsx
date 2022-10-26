@@ -1,14 +1,111 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "../Components/Navbar";
+import Planet from "../Assets/planet-neptune.svg";
+import Internal from "../Assets/planet-neptune-internal.svg";
+import Geology from "../Assets/geology-neptune.png";
 
-const Neptune = () => {
+import "../index.css";
+
+import PlanetData from "../data.json";
+
+const Mercury = () => {
+  const [overview, setOverView] = useState(true);
+  const [structure, setStructure] = useState(false);
+  const [surface, setSurface] = useState(false);
+
+  const overviewHandler = () => {
+    setOverView(true);
+
+    if (structure) {
+      setStructure(false);
+    }
+    if (surface) {
+      setSurface(false);
+    }
+  };
+
+  const structureHandler = () => {
+    setStructure(true);
+
+    if (overview) {
+      setOverView(false);
+    }
+    if (surface) {
+      setSurface(false);
+    }
+  };
+
+  const surfaceHandler = () => {
+    setSurface(true);
+
+    if (structure) {
+      setStructure(false);
+    }
+    if (overview) {
+      setOverView(false);
+    }
+  };
+
   return (
     <React.Fragment>
       <Navbar />
-      <h1>Neptune</h1>
+      <main>
+        <section>
+          <div className="container">
+            <div className="planet-buttons">
+              <button onClick={overviewHandler}>Overview</button>
+              <button onClick={structureHandler}>Structure</button>
+              <button onClick={surfaceHandler}>Surface</button>
+            </div>
+            <div className="planet-info-wrrapper">
+              {overview && (
+                <>
+                  <img alt="planet" src={Planet} />
+                  <h2>{PlanetData[7].name}</h2>
+                  <p>{`${PlanetData[7].overview.content}`}</p>
+                  <a href={`${PlanetData[7].overview.source}`}>Wikipedia</a>
+                </>
+              )}
+              {structure && (
+                <>
+                  <img alt="planet sctructure" src={Internal} />
+                  <h2>{PlanetData[7].name}</h2>
+                  <p>{`${PlanetData[7].structure.content}`}</p>
+                  <a href={`${PlanetData[7].structure.source}`}>Wikipedia</a>
+                </>
+              )}
+              {surface && (
+                <>
+                  <img src={Planet} alt="planet" />
+                  <img alt="planet surface" src={Geology} />
+                  <h2>{PlanetData[7].name}</h2>
+                  <p>{`${PlanetData[7].geology.content}`}</p>
+                  <a href={`${PlanetData[7].geology.source}`}>Wikipedia</a>
+                </>
+              )}
+            </div>
+            <div>
+              <div>
+                <h2>Rotation time:</h2>
+                <div>{`${PlanetData[7].rotation}`}</div>
+              </div>
+              <div>
+                <h2>Revolution time:</h2>
+                {PlanetData[7].revolution}
+              </div>
+              <div>
+                <h2>Radius:</h2>
+                {PlanetData[7].radius}
+              </div>
+              <h2>Average temp.</h2>
+              <div>{PlanetData[7].temperature}</div>
+            </div>
+          </div>
+        </section>
+      </main>
     </React.Fragment>
   );
 };
 
-export default Neptune;
+export default Mercury;

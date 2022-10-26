@@ -60,6 +60,10 @@
   cursor: pointer;
 }
 
+.nav-list > a {
+  display: flex;
+}
+
 .nav-list:hover {
   background-color: var(--very-dark-grey);
 }
