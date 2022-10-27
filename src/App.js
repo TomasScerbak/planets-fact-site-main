@@ -8,6 +8,7 @@ import Jupiter from "./Pages/Jupiter";
 import Saturn from "./Pages/Saturn";
 import Uranus from "./Pages/Uranus";
 import Neptune from "./Pages/Neptune";
+import Attribution from "./Components/Attribution";
 
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="Uranus" element={<Uranus />}></Route>
         <Route path="Neptune" element={<Neptune />}></Route>
       </Routes>
+      <Attribution />
     </BrowserRouter>
   );
 }
