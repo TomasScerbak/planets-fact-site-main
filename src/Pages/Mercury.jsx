@@ -68,7 +68,7 @@ const Mercury = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="mercury" alt="planet" src={Planet} />
+                  <img className="planet" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[0].name}</h2>
@@ -89,7 +89,7 @@ const Mercury = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="mercury" alt="planet" src={Internal} />
+                  <img className="planet" alt="planet" src={Internal} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[0].name}</h2>
@@ -110,10 +110,10 @@ const Mercury = () => {
             {surface && (
               <>
                 <div className="planet-image">
-                  <div className="mercury-images">
-                    <img className="mercury" src={Planet} alt="planet" />
+                  <div className="planet-images">
+                    <img className="planet" src={Planet} alt="planet" />
                     <img
-                      className="mercury-adhoc"
+                      className="planet-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />
@@ -135,23 +135,23 @@ const Mercury = () => {
                 </div>
               </>
             )}
-            <div className="planet-data-wrapper">
-              <div className="planet-data">
-                <h2 className="text">Rotation time:</h2>
-                <div className="data">{`${PlanetData[0].rotation}`}</div>
-              </div>
-              <div className="planet-data">
-                <h2 className="text">Revolution time:</h2>
-                <div className="data">{PlanetData[0].revolution}</div>
-              </div>
-              <div className="planet-data">
-                <h2 className="text">Radius:</h2>
-                <div className="data">{PlanetData[0].radius}</div>
-              </div>
-              <div className="planet-data">
-                <h2 className="text">Average temp.</h2>
-                <div className="data">{PlanetData[0].temperature}</div>
-              </div>
+          </div>
+          <div className="planet-data-wrapper">
+            <div className="planet-data">
+              <h2 className="text">Rotation time:</h2>
+              <div className="data">{`${PlanetData[0].rotation}`}</div>
+            </div>
+            <div className="planet-data">
+              <h2 className="text">Revolution time:</h2>
+              <div className="data">{PlanetData[0].revolution}</div>
+            </div>
+            <div className="planet-data">
+              <h2 className="text">Radius:</h2>
+              <div className="data">{PlanetData[0].radius}</div>
+            </div>
+            <div className="planet-data">
+              <h2 className="text">Average temp.</h2>
+              <div className="data">{PlanetData[0].temperature}</div>
             </div>
           </div>
         </section>
