@@ -176,15 +176,49 @@ p {
     border: 1px solid hsla(0, 0%, 59%, 0.5);
     color: var(--white);
     margin-bottom: 1.6rem;
-    content: "01 Overview";
   }
 
   .btn::after {
     content: none;
   }
 
-  .btn:hover {
+  .btn--mercury:hover {
     background-color: var(--turquoise);
+    transition: 0.5s all;
+  }
+
+  .btn--venus:hover {
+    background-color: var(--orange);
+    transition: 0.5s all;
+  }
+
+  .btn--earth:hover {
+    background-color: var(--purple);
+    transition: 0.5s all;
+  }
+
+  .btn--mars:hover {
+    background-color: var(--light-red);
+    transition: 0.5s all;
+  }
+
+  .btn--jupiter:hover {
+    background-color: var(--red);
+    transition: 0.5s all;
+  }
+
+  .btn--saturn:hover {
+    background-color: var(--brown);
+    transition: 0.5s all;
+  }
+
+  .btn--uranus:hover {
+    background-color: var(--green);
+    transition: 0.5s all;
+  }
+
+  .btn--neptune:hover {
+    background-color: var(--blue);
     transition: 0.5s all;
   }
 }

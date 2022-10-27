@@ -55,13 +55,13 @@ const Earth = () => {
         <section>
           <div className="container">
             <div className="planet-buttons">
-              <button className="btn btn--mercury" onClick={overviewHandler}>
+              <button className="btn btn--earth" onClick={overviewHandler}>
                 Overview
               </button>
-              <button className="btn btn--mercury" onClick={structureHandler}>
+              <button className="btn btn--earth" onClick={structureHandler}>
                 Structure
               </button>
-              <button className="btn btn--mercury" onClick={surfaceHandler}>
+              <button className="btn btn--earth" onClick={surfaceHandler}>
                 Surface
               </button>
             </div>
