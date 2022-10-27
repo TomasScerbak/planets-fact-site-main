@@ -6,3 +6,15 @@
 .attribution a {
   color: hsl(228, 71%, 54%);
 }
+
+@media screen and (min-width: 576px) {
+  .attribution {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .attribution {
+    font-size: 18px;
+  }
+}
