@@ -229,7 +229,7 @@ p {
   }
 }
 
-/* Mercury */
+/* Planets */
 .planet-info {
   text-align: center;
   margin: 0 2.4rem 2.8rem;
@@ -344,7 +344,7 @@ p {
   .planet-info {
     grid-column: 2;
     grid-row: 1;
-    margin: 21.2rem 13.5rem 2.8rem;
+    margin: 21.2rem 0 2.8rem 10rem;
   }
   .planet-image {
     grid-column: 1;
