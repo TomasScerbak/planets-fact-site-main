@@ -226,6 +226,8 @@ p {
 @media screen and (min-width: 990px) {
   .btn {
     font-size: 1.2rem;
+    width: 35rem;
+    height: 4.8rem;
   }
 }
 
@@ -245,7 +247,7 @@ p {
   margin: auto;
 }
 
-.planet,
+.planet--mercury,
 .planet-structure,
 .planet-surface {
   width: 11rem;
@@ -253,12 +255,110 @@ p {
   margin: 9.5rem 13.2rem 9.8rem;
 }
 
-.planet-adhoc {
+.planet--venus {
+  width: 15.4rem;
+  height: 15.4rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--earth {
+  width: 17.3rem;
+  height: 17.3rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--mars {
+  width: 21.3rem;
+  height: 21.3rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--jupiter {
+  width: 22.4rem;
+  height: 22.4rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--saturn {
+  width: 25.6rem;
+  height: 25.6rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--uranus {
+  width: 17.6rem;
+  height: 17.6rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--neptune {
+  width: 17.3rem;
+  height: 17.3rem;
+  margin: 9.5rem 1rem 9.8rem;
+}
+
+.planet--mercury-adhoc {
   width: 7rem;
-  height: 7rem;
+  height: 9rem;
   position: absolute;
   bottom: 5rem;
-  left: 41%;
+  left: 41.5%;
+}
+
+.planet--venus-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 6rem;
+  left: 31%;
+}
+
+.planet--earth-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 32%;
+}
+
+.planet--mars-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 6rem;
+  left: 35%;
+}
+
+.planet--jupiter-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 11rem;
+  left: 36%;
+}
+
+.planet--saturn-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 11rem;
+  left: 36%;
+}
+
+.planet--uranus-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 33%;
+}
+
+.planet--neptune-adhoc {
+  width: 7rem;
+  height: 9rem;
+  position: absolute;
+  bottom: 8rem;
+  left: 33%;
 }
 
 .source-wrapper {
@@ -303,17 +403,115 @@ p {
     grid-row: 2;
   }
 
-  .planet {
-    width: 18.4rem;
-    height: 18.4rem;
+  .planet--mercury {
+    width: 16.4rem;
+    height: 16.4rem;
   }
 
-  .planet-adhoc {
+  .planet--venus {
+    width: 25.3rem;
+    height: 25.3rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--earth {
+    width: 28.5rem;
+    height: 28.5rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--mars {
+    width: 33.6rem;
+    height: 33.6rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--jupiter {
+    width: 36.9rem;
+    height: 36.9rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--saturn {
+    width: 42.2rem;
+    height: 42.2rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--uranus {
+    width: 29rem;
+    height: 29rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--neptune {
+    width: 28.5rem;
+    height: 28.5rem;
+    margin: 9.5rem 13rem 9.8rem;
+  }
+
+  .planet--mercury-adhoc {
     width: 10rem;
     height: 12rem;
     position: absolute;
     bottom: 2rem;
-    left: 39.5%;
+    left: 38.5%;
+  }
+
+  .planet--venus-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 40%;
+  }
+
+  .planet--earth-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 41%;
+  }
+
+  .planet--mars-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 42%;
+  }
+
+  .planet--jupiter-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 12rem;
+    left: 42%;
+  }
+
+  .planet--saturn-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 14rem;
+    left: 42.5%;
+  }
+
+  .planet--uranus-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 41%;
+  }
+
+  .planet--neptune-adhoc {
+    width: 10rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 41%;
   }
 
   .planet-images {
@@ -336,7 +534,7 @@ p {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 990px) {
   .container {
     max-width: 1024px;
     margin: auto;
@@ -344,7 +542,7 @@ p {
   .planet-info {
     grid-column: 2;
     grid-row: 1;
-    margin: 21.2rem 0 2.8rem 10rem;
+    margin: 21.2rem 0 2.8rem 8rem;
   }
   .planet-image {
     grid-column: 1;
@@ -352,17 +550,107 @@ p {
     margin: auto;
   }
 
-  .planet,
+  .planet--mercury,
   .planet-structure,
   .planet-surface {
-    margin: 20.5rem 13.2rem 9.8rem;
+    margin: 25.5rem 13.2rem 9.8rem;
   }
 
-  .planet-adhoc {
+  .planet--mercury {
+    width: 29rem;
+    height: 29rem;
+    margin: 25.5rem 11rem 9.8rem;
+  }
+
+  .planet--venus {
+    width: 40rem;
+    height: 40rem;
+    margin: 25.5rem 5rem 9.8rem;
+  }
+
+  .planet--earth {
+    width: 45rem;
+    height: 45rem;
+    margin: 25.5rem 4rem 9.8rem;
+  }
+
+  .planet--mars {
+    width: 33.6rem;
+    height: 33.6rem;
+    margin: 25.5rem 4rem 9.8rem;
+  }
+
+  .planet--jupiter {
+    width: 55rem;
+    height: 55rem;
+    margin: 25.5rem 0 9.8rem;
+  }
+
+  .planet--saturn {
+    width: 66.6rem;
+    height: 66.6rem;
+    margin: 15.5rem 0 0;
+  }
+
+  .planet--uranus {
+    width: 45.8rem;
+    height: 45.8rem;
+    margin: 15.5rem 0 0;
+  }
+
+  .planet--neptune {
+    width: 45rem;
+    height: 45rem;
+    margin: 15.5rem 0 0;
+  }
+
+  .planet--mercury-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 34%;
+    bottom: -2rem;
+  }
+
+  .planet--venus-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 34%;
+    bottom: -2rem;
+  }
+
+  .planet--earth-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 35%;
+    bottom: 4rem;
+  }
+
+  .planet--mars-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 31%;
+    bottom: -2rem;
+  }
+
+  .planet--jupiter-adhoc {
     width: 16.3rem;
     height: 19.9rem;
     left: 35.5%;
-    bottom: -2rem;
+    bottom: 13rem;
+  }
+
+  .planet--uranus-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 32.5%;
+    bottom: -6rem;
+  }
+
+  .planet--neptune-adhoc {
+    width: 16.3rem;
+    height: 19.9rem;
+    left: 32%;
+    bottom: -4rem;
   }
 
   .planet-buttons {

@@ -68,7 +68,7 @@ const Mars = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--mars" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[3].name}</h2>
@@ -89,7 +89,7 @@ const Mars = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img className="planet--mars" alt="planet" src={Internal} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[3].name}</h2>
@@ -111,9 +111,9 @@ const Mars = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
+                    <img className="planet--mars" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--mars-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />

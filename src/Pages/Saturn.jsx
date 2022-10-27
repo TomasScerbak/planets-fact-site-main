@@ -68,7 +68,7 @@ const Saturn = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--saturn" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[5].name}</h2>
@@ -89,7 +89,7 @@ const Saturn = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img className="planet--saturn" alt="planet" src={Internal} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[5].name}</h2>
@@ -111,9 +111,9 @@ const Saturn = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
+                    <img className="planet--saturn" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--saturn-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />

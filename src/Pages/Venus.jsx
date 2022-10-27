@@ -68,7 +68,7 @@ const Venus = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--venus" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[1].name}</h2>
@@ -89,7 +89,7 @@ const Venus = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img className="planet--venus" alt="planet" src={Internal} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[1].name}</h2>
@@ -111,9 +111,9 @@ const Venus = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
+                    <img className="planet--venus" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--venus-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />

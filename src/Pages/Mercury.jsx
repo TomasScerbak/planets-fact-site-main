@@ -68,7 +68,7 @@ const Mercury = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--mercury" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[0].name}</h2>
@@ -89,7 +89,11 @@ const Mercury = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img
+                    className="planet--mercury"
+                    alt="planet"
+                    src={Internal}
+                  />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[0].name}</h2>
@@ -111,9 +115,13 @@ const Mercury = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--mercury"
+                      src={Planet}
+                      alt="planet"
+                    />
+                    <img
+                      className="planet--mercury-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />

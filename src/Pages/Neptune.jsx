@@ -68,7 +68,7 @@ const Neptune = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--neptune" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[7].name}</h2>
@@ -89,7 +89,11 @@ const Neptune = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img
+                    className="planet--neptune"
+                    alt="planet"
+                    src={Internal}
+                  />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[7].name}</h2>
@@ -111,9 +115,13 @@ const Neptune = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--neptune"
+                      src={Planet}
+                      alt="planet"
+                    />
+                    <img
+                      className="planet--neptune-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />

@@ -68,7 +68,7 @@ const Uranus = () => {
             {overview && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Planet} />
+                  <img className="planet--uranus" alt="planet" src={Planet} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[6].name}</h2>
@@ -89,7 +89,7 @@ const Uranus = () => {
             {structure && (
               <>
                 <div className="planet-image">
-                  <img className="planet" alt="planet" src={Internal} />
+                  <img className="planet--uranus" alt="planet" src={Internal} />
                 </div>
                 <div className="planet-info">
                   <h2>{PlanetData[6].name}</h2>
@@ -111,9 +111,9 @@ const Uranus = () => {
               <>
                 <div className="planet-image">
                   <div className="planet-images">
-                    <img className="planet" src={Planet} alt="planet" />
+                    <img className="planet--uranus" src={Planet} alt="planet" />
                     <img
-                      className="planet-adhoc"
+                      className="planet--uranus-adhoc"
                       alt="planet surface"
                       src={Geology}
                     />
