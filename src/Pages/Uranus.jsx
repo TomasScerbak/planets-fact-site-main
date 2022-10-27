@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Planet from "../Assets/planet-uranus.svg";
 import Internal from "../Assets/planet-uranus-internal.svg";
 import Geology from "../Assets/geology-uranus.png";
+import IconSource from "../Assets/icon-source.svg";
 
 import "../index.css";
 
@@ -54,52 +55,103 @@ const Uranus = () => {
         <section>
           <div className="container">
             <div className="planet-buttons">
-              <button onClick={overviewHandler}>Overview</button>
-              <button onClick={structureHandler}>Structure</button>
-              <button onClick={surfaceHandler}>Surface</button>
+              <button className="btn btn--mercury" onClick={overviewHandler}>
+                Overview
+              </button>
+              <button className="btn btn--mercury" onClick={structureHandler}>
+                Structure
+              </button>
+              <button className="btn btn--mercury" onClick={surfaceHandler}>
+                Surface
+              </button>
             </div>
-            <div className="planet-info-wrrapper">
-              {overview && (
-                <>
-                  <img alt="planet" src={Planet} />
+            {overview && (
+              <>
+                <div className="planet-image">
+                  <img className="planet" alt="planet" src={Planet} />
+                </div>
+                <div className="planet-info">
                   <h2>{PlanetData[6].name}</h2>
-                  <p>{`${PlanetData[0].overview.content}`}</p>
-                  <a href={`${PlanetData[6].overview.source}`}>Wikipedia</a>
-                </>
-              )}
-              {structure && (
-                <>
-                  <img alt="planet sctructure" src={Internal} />
-                  <h2>{PlanetData[5].name}</h2>
-                  <p>{`${PlanetData[0].structure.content}`}</p>
-                  <a href={`${PlanetData[6].structure.source}`}>Wikipedia</a>
-                </>
-              )}
-              {surface && (
-                <>
-                  <img src={Planet} alt="planet" />
-                  <img alt="planet surface" src={Geology} />
-                  <h2>{PlanetData[5].name}</h2>
+                  <p>{`${PlanetData[6].overview.content}`}</p>
+                  <div className="source-wrapper">
+                    <span className="source">Source : </span>
+                    <a
+                      className="source__link"
+                      href={`${PlanetData[6].overview.source}`}
+                    >
+                      Wikipedia
+                    </a>
+                    <img className="source__image" src={IconSource} alt="#" />
+                  </div>
+                </div>
+              </>
+            )}
+            {structure && (
+              <>
+                <div className="planet-image">
+                  <img className="planet" alt="planet" src={Internal} />
+                </div>
+                <div className="planet-info">
+                  <h2>{PlanetData[6].name}</h2>
+                  <p>{`${PlanetData[6].structure.content}`}</p>
+                  <div className="source-wrapper">
+                    <span className="source">Source : </span>
+                    <a
+                      className="source__link"
+                      href={`${PlanetData[6].structure.source}`}
+                    >
+                      Wikipedia
+                    </a>
+                    <img className="source__image" src={IconSource} alt="#" />
+                  </div>
+                </div>
+              </>
+            )}
+            {surface && (
+              <>
+                <div className="planet-image">
+                  <div className="planet-images">
+                    <img className="planet" src={Planet} alt="planet" />
+                    <img
+                      className="planet-adhoc"
+                      alt="planet surface"
+                      src={Geology}
+                    />
+                  </div>
+                </div>
+                <div className="planet-info">
+                  <h2>{PlanetData[6].name}</h2>
                   <p>{`${PlanetData[6].geology.content}`}</p>
-                  <a href={`${PlanetData[6].geology.source}`}>Wikipedia</a>
-                </>
-              )}
+                  <div className="source-wrapper">
+                    <span className="source">Source : </span>
+                    <a
+                      className="source__link"
+                      href={`${PlanetData[6].geology.source}`}
+                    >
+                      Wikipedia
+                    </a>
+                    <img className="source__image" src={IconSource} alt="#" />
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+          <div className="planet-data-wrapper">
+            <div className="planet-data">
+              <h2 className="text">Rotation time:</h2>
+              <div className="data">{`${PlanetData[6].rotation}`}</div>
             </div>
-            <div>
-              <div>
-                <h2>Rotation time:</h2>
-                <div>{`${PlanetData[6].rotation}`}</div>
-              </div>
-              <div>
-                <h2>Revolution time:</h2>
-                {PlanetData[6].revolution}
-              </div>
-              <div>
-                <h2>Radius:</h2>
-                {PlanetData[6].radius}
-              </div>
-              <h2>Average temp.</h2>
-              <div>{PlanetData[6].temperature}</div>
+            <div className="planet-data">
+              <h2 className="text">Revolution time:</h2>
+              <div className="data">{PlanetData[6].revolution}</div>
+            </div>
+            <div className="planet-data">
+              <h2 className="text">Radius:</h2>
+              <div className="data">{PlanetData[6].radius}</div>
+            </div>
+            <div className="planet-data">
+              <h2 className="text">Average temp.</h2>
+              <div className="data">{PlanetData[6].temperature}</div>
             </div>
           </div>
         </section>
