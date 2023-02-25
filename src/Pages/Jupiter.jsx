@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Navbar from "../Components/Navbar";
 import Planet from "../Assets/planet-jupiter.svg";
 import Internal from "../Assets/planet-jupiter-internal.svg";
 import Geology from "../Assets/geology-jupiter.png";
@@ -50,7 +49,6 @@ const Jupiter = () => {
 
   return (
     <React.Fragment>
-      <Navbar />
       <main>
         <section>
           <div className="container">
